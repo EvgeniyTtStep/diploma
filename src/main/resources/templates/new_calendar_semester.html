@@ -1,0 +1,431 @@
+
+
+<!DOCTYPE html>
+
+<!-- =========================================================
+* Sneat - Bootstrap 5 HTML Admin Template - Pro | v1.0.0
+==============================================================
+
+* Product Page: https://themeselection.com/products/sneat-bootstrap-html-admin-template/
+* Created by: ThemeSelection
+* License: You must have a valid license purchased in order to legally use the theme for your project.
+* Copyright ThemeSelection (https://themeselection.com)
+
+=========================================================
+ -->
+<!-- beautify ignore:start -->
+<html
+        lang="en"
+        class="light-style layout-menu-fixed"
+        dir="ltr"
+        data-theme="theme-default"
+        data-assets-path="../assets/"
+        data-template="vertical-menu-template-free"
+        xmlns:th="https://www.thymeleaf.org/"
+>
+<head>
+  <meta charset="utf-8"/>
+  <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
+  />
+
+  <title>Buttons - UI elements | Sneat - Bootstrap 5 HTML Admin Template - Pro</title>
+
+  <meta name="description" content=""/>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" th:href="@{/static/assets/img/favicon/favicon.ico}"/>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link
+          href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+          rel="stylesheet"
+  />
+
+  <!-- Icons. Uncomment required icon fonts -->
+  <link rel="stylesheet" th:href="@{/static/assets/vendor/fonts/boxicons.css}"/>
+
+  <!-- Core CSS -->
+  <link rel="stylesheet" th:href="@{/static/assets/vendor/css/core.css}" class="template-customizer-core-css"/>
+  <link rel="stylesheet" th:href="@{/static/assets/vendor/css/theme-default.css}"
+        class="template-customizer-theme-css"/>
+  <link rel="stylesheet" th:href="@{/static/assets/css/demo.css}"/>
+
+  <!-- Vendors CSS -->
+  <link rel="stylesheet" th:href="@{/static/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css}"/>
+
+  <!-- Page CSS -->
+
+  <!-- Helpers -->
+  <script th:src="@{/static/assets/vendor/js/helpers.js}"></script>
+
+  <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+  <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+  <script th:src="@{/static/assets/js/config.js}"></script>
+</head>
+
+<body>
+<!-- Layout wrapper -->
+<div class="layout-wrapper layout-content-navbar">
+  <div class="layout-container">
+
+
+    <!-- / Menu -->
+
+    <!-- Layout container -->
+    <div class="container-xxl">
+      <!-- Navbar -->
+
+      <nav
+              class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme"
+              id="layout-navbar"
+      >
+        <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
+          <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
+            <i class="bx bx-menu bx-sm"></i>
+          </a>
+        </div>
+
+        <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
+            <div class="navbar-nav align-items-center">
+            <div class="nav-item">
+              <a href="/home" class="btn">
+                <span class="fs-4 lh-0">Diploma</span>
+              </a>
+            </div>
+          </div>
+          <ul class="navbar-nav flex-row align-items-center ms-auto">
+
+            <li class="nav-item navbar-dropdown dropdown-user dropdown">
+              <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);"
+                 data-bs-toggle="dropdown">
+                                <span class="ms-2 fw-bold" th:text="${school.name}"
+                                      style="color: black; font-weight: bold; "/>
+                </span>
+              </a>
+            </li>
+
+          </ul>
+          <div class="header-right">
+            <a class="btn" href="/logout" style="float: right">Log out</a>
+          </div>
+        </div>
+      </nav>
+
+      <div class="content-wrapper">
+        <!-- Content -->
+
+        <div class="container-xxl flex-grow-1 container-p-y">
+<!--          <h4 class="fw-bold py-3 mb-4">-->
+<!--            <span class="text-muted fw-light">AdminPage /</span>-->
+<!--            ManageSemesters-->
+<!--          </h4>-->
+
+          <h4 class="fw-bold py-3 mb-4">
+            <span class="text-muted fw-light"><a href="../../semesters/list">Semesters Management /</a></span>
+            Semester Information
+          </h4>
+
+          <div class="row">
+            <div class="col-12">
+              <div class="card mb-4">
+<!--                <h5 class="card-header">Manage Semesters</h5>-->
+                <div class="card-body">
+                  <div class="row gy-3">
+                    <div class="col-xl-6">
+                      <!-- <h4 th:text="${school.name}" style="color: black; font-weight: bold; font-size: 35px; padding: 15px;"></h4>-->
+
+
+
+
+                      <div class="container">
+                        <h2 class="fw-bold fs-4" style="color: black; padding-left: 10px; margin: 10px 0;">Semester Information</h2>
+                        <div class="container-main p-4">
+                          <a href="./rotation_config" class="btn btn-primary me-2">Rename Rotation Days</a> <br><br>
+                          <a href="./edit_timeslots" class="btn btn-primary">Edit Timeslots</a>
+                        </div>
+                        <div>
+
+<!--                          <form method="post" autocomplete="off">-->
+<!--                            <h3 class="fs-5" style="padding: 0 5px 5px 20px;">Go to schedule for:</h3>-->
+<!--                            <div class="mb-3">-->
+<!--                              <input type="radio" name="for_a" id="group" value="group" onchange="radio_change(this)" class="form-check-input" />-->
+<!--                              <label class="form-check-label" for="group">Group:</label>-->
+<!--                              <input id="groupInput" type="text" name="name" placeholder="Search groups" disabled class="form-control" oninput="updateButtonState()"/>-->
+<!--                            </div>-->
+<!--                            <div class="mb-3">-->
+<!--                              <input type="radio" name="for_a" id="teacher" value="teacher" onchange="radio_change(this)" class="form-check-input"/>-->
+<!--                              <label class="form-check-label" for="teacher">Teacher:</label>-->
+<!--                              <input id="teacherInput" type="text" name="name" placeholder="Search teachers" disabled class="form-control" oninput="updateButtonState()"/>-->
+<!--                            </div>-->
+<!--                            <button type="submit" class="btn btn-primary">Go To Schedule</button>-->
+<!--                          </form>-->
+
+
+                            <form method="post" autocomplete="off">
+                                <h3 class="fs-5" style="padding: 0 5px 5px 20px;">Go to schedule for:</h3>
+
+                                <div class="mb-3">
+                                    <input type="radio" name="for_a" id="group" value="group" onchange="radio_change(this)" class="form-check-input"/>
+                                    <label class="form-check-label" for="group">Group:</label>
+                                    <input id="groupInput" type="text" name="name" placeholder="Search groups" disabled class="form-control" oninput="updateButtonState()"/>
+                                </div>
+
+                                <div class="mb-3">
+                                    <input type="radio" name="for_a" id="teacher" value="teacher" onchange="radio_change(this)" class="form-check-input"/>
+                                    <label class="form-check-label" for="teacher">Teacher:</label>
+                                    <input id="teacherInput" type="text" name="name" placeholder="Search teachers" disabled class="form-control" oninput="updateButtonState()"/>
+                                </div>
+
+                                <button id="goToScheduleButton" type="submit" class="btn btn-primary" disabled>Go To Schedule</button>
+                            </form>
+
+
+                        </div>
+                        <div th:each="calendar: ${calendars}">
+                          <div class="calendar mt-4" th:each="month: ${calendar.keySet()}">
+                            <h4 class="fs-6 fw-bold" th:text="${month}"></h4>
+                            <table class="table">
+                              <tr th:each="row: ${calendar.get(month)}">
+                                <td th:each="data: ${row}">
+                                  <div class="white-space-pre-line" th:text="${data}"></div>
+                                </td>
+                              </tr>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+
+                      <script th:inline="javascript">
+
+                        // function radio_change(e) {
+                        //   var inp_id = e.getAttribute("id") + "Input";
+                        //   var inp = document.getElementById(inp_id);
+                        //   inp.disabled =  !e.checked;
+                        //   var radios = document.getElementsByName("for_a");
+                        //   for (var i=0; i<radios.length; i++) {
+                        //     if (radios[i] === e) {
+                        //       continue;
+                        //     } else {
+                        //       inp_id = radios[i].getAttribute("id") + "Input";
+                        //       inp = document.getElementById(inp_id);
+                        //       inp.value = "";
+                        //       inp.disabled = !radios[i].checked;
+                        //     }
+                        //   }
+                        // }
+
+                        function radio_change(e) {
+                            var inp_id = e.getAttribute("id") + "Input";
+                            var inp = document.getElementById(inp_id);
+                            inp.disabled = !e.checked;
+                            var radios = document.getElementsByName("for_a");
+                            for (var i = 0; i < radios.length; i++) {
+                                if (radios[i] === e) continue;
+                                var other_inp_id = radios[i].getAttribute("id") + "Input";
+                                var other_inp = document.getElementById(other_inp_id);
+                                other_inp.value = "";
+                                other_inp.disabled = !radios[i].checked;
+                            }
+                            // Обновляем состояние кнопки после смены радиокнопки
+                            updateButtonState();
+                        }
+
+                        function updateButtonState() {
+                            // Получаем выбранную радио-кнопку
+                            const selectedRadio = document.querySelector('input[name="for_a"]:checked');
+                            if (!selectedRadio) {
+                                document.getElementById('goToScheduleButton').disabled = true;
+                                return;
+                            }
+                            // Получаем ID связанного с радио текстового поля
+                            const inp_id = selectedRadio.getAttribute("id") + "Input";
+                            const inputField = document.getElementById(inp_id);
+                            // Проверяем, есть ли текст в активном текстовом поле
+                            const isInputNotEmpty = inputField && inputField.value.trim() !== '';
+                            // Активируем или деактивируем кнопку
+                            document.getElementById('goToScheduleButton').disabled = !isInputNotEmpty;
+                        }
+
+
+                        function autocomplete(inp, arr_names) {
+                          var currentFocus;
+                          inp.addEventListener("input", function(e) {
+                            var a, b, i, val = this.value;
+                            closeAllLists();
+                            if (!val) { return false;}
+                            currentFocus = -1;
+                            a = document.createElement("DIV");
+                            a.setAttribute("id", this.id + "autocomplete-list");
+                            a.setAttribute("class", "autocomplete-items");
+                            this.parentNode.appendChild(a);
+                            for (i = 0; i < arr_names.length; i++) {
+                              if (arr_names[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
+                                b = document.createElement("DIV");
+                                b.innerHTML = "<strong>" + arr_names[i].substr(0, val.length) + "</strong>";
+                                b.innerHTML += arr_names[i].substr(val.length);
+                                b.innerHTML += "<input type='hidden' name='group_name' value='" + arr_names[i] + "'/>";
+                                b.classList.add("search_option");
+                                b.addEventListener("click", function(e) {
+                                  this.innerHTML = this.innerHTML.replace("<strong>", "");
+                                  this.innerHTML = this.innerHTML.replace("</strong>", "");
+                                  inp.value = this.getElementsByTagName("input")[0].value;
+                                  closeAllLists();
+                                });
+                                a.appendChild(b);
+                              }
+                            }
+                          });
+
+                          inp.addEventListener("keydown", function(e) {
+                            var x = document.getElementById(this.id + "autocomplete-list");
+                            if (x) x = x.getElementsByTagName("div");
+                            if (e.keyCode == 40) {
+                              currentFocus++;
+                              addActive(x);
+                            } else if (e.keyCode == 38) {
+                              currentFocus--;
+                              addActive(x);
+                            } else if (e.keyCode == 13) {
+                              e.preventDefault();
+                              if (currentFocus > -1) {
+                                if (x) x[currentFocus].click();
+                              }
+                            }
+                          });
+                          function addActive(x) {
+                            if (!x) return false;
+                            removeActive(x);
+                            if (currentFocus >= x.length) currentFocus = 0;
+                            if (currentFocus < 0) currentFocus = (x.length - 1);
+                            x[currentFocus].classList.add("autocomplete-active");
+                          }
+                          function removeActive(x) {
+                            for (var i = 0; i < x.length; i++) {
+                              x[i].classList.remove("autocomplete-active");
+                            }
+                          }
+                          function closeAllLists(elmnt) {
+                            var x = document.getElementsByClassName("autocomplete-items");
+                            for (var i = 0; i < x.length; i++) {
+                              if (elmnt != x[i] && elmnt != inp) {
+                                x[i].parentNode.removeChild(x[i]);
+                              }
+                            }
+                          }
+                          document.addEventListener("click", function (e) {
+                            closeAllLists(e.target);
+                          });
+                        }
+
+
+                        var groupnames = [[${groupnames}]];
+                        autocomplete(document.getElementById("groupInput"), groupnames);
+                        var teachernames = [[${teachernames}]];
+                        autocomplete(document.getElementById("teacherInput"), teachernames);
+                        var t = document.getElementsByTagName("tbody");
+                        for (var i=0; i < t.length; i++) {
+                          t.item(i).firstElementChild.style.backgroundColor = "#b99ccd";
+                        }
+                      </script>
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer class="content-footer footer bg-footer-theme">
+        <div class="container-xxl d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column">
+          <div class="mb-2 mb-md-0">
+            ©
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            , made with ❤️ by
+            <a href="https://themeselection.com" target="_blank" class="footer-link fw-bolder">ThemeSelection</a>
+          </div>
+          <div>
+            <a href="https://themeselection.com/license/" class="footer-link me-4"
+               target="_blank">License</a>
+            <a href="https://themeselection.com/" target="_blank" class="footer-link me-4">More Themes</a>
+
+            <a
+                    href="https://themeselection.com/demo/sneat-bootstrap-html-admin-template/documentation/"
+                    target="_blank"
+                    class="footer-link me-4"
+            >Documentation</a
+            >
+
+            <a
+                    href="https://github.com/themeselection/sneat-html-admin-template-free/issues"
+                    target="_blank"
+                    class="footer-link me-4"
+            >Support</a
+            >
+          </div>
+        </div>
+      </footer>
+      <!-- / Footer -->
+
+      <div class="content-backdrop fade"></div>
+    </div>
+    <!-- Content wrapper -->
+  </div>
+  <!-- / Layout page -->
+</div>
+
+<!-- Overlay -->
+<div class="layout-overlay layout-menu-toggle"></div>
+</div>
+<!-- / Layout wrapper -->
+
+<div class="buy-now">
+  <a
+          href="https://themeselection.com/products/sneat-bootstrap-html-admin-template/"
+          target="_blank"
+          class="btn btn-danger btn-buy-now"
+  >Upgrade to Pro</a
+  >
+</div>
+
+<!-- Core JS -->
+<!-- build:js assets/vendor/js/core.js -->
+<script th:src="@{/static/assets/vendor/libs/jquery/jquery.js}"></script>
+<script th:src="@{/static/assets/vendor/libs/popper/popper.js}"></script>
+<script th:src="@{/static/assets/vendor/js/bootstrap.js}"></script>
+<script th:src="@{/static/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js}"></script>
+
+<script th:src="@{/static/assets/vendor/js/menu.js}"></script>
+<!-- endbuild -->
+
+<!-- Vendors JS -->
+
+<!-- Main JS -->
+<script th:src="@{/static/assets/js/main.js}"></script>
+
+<!-- Page JS -->
+
+<!-- Place this tag in your head or just before your close body tag. -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+</body>
+</html>

@@ -1,0 +1,916 @@
+<html
+        lang="en"
+        class="light-style layout-menu-fixed"
+        dir="ltr"
+        data-theme="theme-default"
+        data-assets-path="../assets/"
+        data-template="vertical-menu-template-free"
+        xmlns:th="https://www.thymeleaf.org/"
+>
+<head>
+  <meta charset="utf-8" />
+  <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
+  />
+
+  <title>Buttons - UI elements | Sneat - Bootstrap 5 HTML Admin Template - Pro</title>
+
+  <meta name="description" content="" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" th:href="@{/static/assets/img/favicon/favicon.ico}" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+          href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+          rel="stylesheet"
+  />
+
+  <!-- Icons. Uncomment required icon fonts -->
+  <link rel="stylesheet" th:href="@{/static/assets/vendor/fonts/boxicons.css}" />
+
+  <!-- Core CSS -->
+  <link rel="stylesheet" th:href="@{/static/assets/vendor/css/core.css}" class="template-customizer-core-css" />
+  <link rel="stylesheet" th:href="@{/static/assets/vendor/css/theme-default.css}" class="template-customizer-theme-css" />
+  <link rel="stylesheet" th:href="@{/static/assets/css/demo.css}" />
+
+  <!-- Vendors CSS -->
+  <link rel="stylesheet" th:href="@{/static/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css}" />
+
+  <!-- Page CSS -->
+
+  <!-- Helpers -->
+  <script th:src="@{/static/assets/vendor/js/helpers.js}"></script>
+
+  <script th:src="@{/static/assets/js/config.js}"></script>
+</head>
+
+  <body>
+    <!-- Layout wrapper -->
+    <div class="layout-wrapper layout-content-navbar">
+      <div class="layout-container">
+
+        <!-- Layout container -->
+        <div class="layout-page">
+          <!-- Navbar -->
+
+          <nav class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme" id="layout-navbar">
+            <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
+              <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
+                <i class="bx bx-menu bx-sm"></i>
+              </a>
+            </div>
+
+            <!--Search-->
+            <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
+              <div class="navbar-nav align-items-center">
+                <div class="nav-item d-flex align-items-center">
+                  <i class="bx bx-search fs-4 lh-0"></i>
+                  <input
+                    type="text"
+                    class="form-control border-0 shadow-none"
+                    placeholder="Пошук..."
+                    aria-label="Пошук..."
+                  />
+                </div>
+              </div>
+            </div>
+          </nav>
+
+          <!--/ Search-->
+
+          <!-- / Navbar -->
+
+          <!-- Content wrapper -->
+          <div class="content-wrapper">
+            <!-- Content -->
+
+            <div class="container-xxl flex-grow-1 container-p-y">
+              <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Чернівецький національний університет /</span> Головна</h4>
+
+              <!-- Examples -->
+              <div class="row mb-5">
+                <div class="col-md-6 col-lg-4 mb-3">
+                  <div class="card h-100">
+                    <img class="card-img-top" src="https://scontent-iev1-1.cdninstagram.com/v/t39.30808-6/424957921_18296505466153203_7129190093988250781_n.jpg?stp=dst-jpg_e35&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xMDgweDEwODAuc2RyLmYzMDgwOCJ9&_nc_ht=scontent-iev1-1.cdninstagram.com&_nc_cat=103&_nc_ohc=mzCsBhkbJowQ7kNvgGOZhOx&edm=AEhyXUkAAAAA&ccb=7-5&ig_cache_key=MzMwOTE1MjYyMTM5MjA0MTIzNw%3D%3D.2-ccb7-5&oh=00_AYAZH7ii2FFCGEG6NanU0g1oK8Q2aCuAZ-Ws3qcR8bSsoQ&oe=6698787D&_nc_sid=8f1549" alt="Card image cap" />
+                    <div class="card-body">
+                      <h5 class="card-title">Студентам</h5>
+                      <p class="card-text">
+            Актуальна інформація щодо розкладу занять, навчальних дисциплін, зразків документів, навчальних планів. Органи студентського самоврядування.
+                      </p>
+                      <a href="javascript:void(0)" class="btn btn-outline-primary">Детальніше?</a>
+                    </div>
+                  </div>
+                </div>
+                 <div class="col-md-6 col-lg-4 mb-3">
+                  <div class="card h-100">
+                    <img class="card-img-top" src="https://scontent-iev1-1.cdninstagram.com/v/t39.30808-6/424957921_18296505466153203_7129190093988250781_n.jpg?stp=dst-jpg_e35&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xMDgweDEwODAuc2RyLmYzMDgwOCJ9&_nc_ht=scontent-iev1-1.cdninstagram.com&_nc_cat=103&_nc_ohc=mzCsBhkbJowQ7kNvgGOZhOx&edm=AEhyXUkAAAAA&ccb=7-5&ig_cache_key=MzMwOTE1MjYyMTM5MjA0MTIzNw%3D%3D.2-ccb7-5&oh=00_AYAZH7ii2FFCGEG6NanU0g1oK8Q2aCuAZ-Ws3qcR8bSsoQ&oe=6698787D&_nc_sid=8f1549" alt="Card image cap" />
+                    <div class="card-body">
+                      <h5 class="card-title">Абітурієнтам</h5>
+                      <p class="card-text">
+            Вступна компанія. Правила прийому. Приймальна комісія. Інформація для вступника. Розташування та графік роботи приймальної комісії
+                      </p>
+                      <a href="javascript:void(0)" class="btn btn-outline-primary">Детальніше?</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Examples -->
+
+              <!-- News -->
+              <h5 class="pb-1 mb-4">Новини</h5>
+
+              <div class="row mb-5">
+                <div class="col-md-6 col-lg-4">
+                  <h6 class="mt-2 text-muted">28.05.2024</h6>
+                  <div class="card mb-4">
+                    <div class="card-body">
+                      <p class="card-text">
+                       15 травня, о 18:00 в Кіноконцертному залі "Чернівці" за сприяння Культурно-мистецького центру імені Івана Миколайчука, відбувся показ кінострічок
+                      </p>
+                        <a href="javascript:void(0)" class="card-link">Детальніше?</a>
+                    </div>
+                  </div>
+                  <h6 class="mt-2 text-muted">28.05.2024</h6>
+                  <div class="card mb-4">
+                    <div class="card-body">
+                      <h5 class="card-title">Зустріч ректора Романа Петришина із почесними гостями конференції</h5>
+                      <p class="card-text">
+                        На зустрічі у присутності декана факультету іноземних мов Ірини Осовськоі, завідувача кафедри комунікативноі лінгвістики та перекладу Василя Бялика та начальника відділу міжнародних звʼязків Сергія Луканюка були обговорені широкі можливості співпраці, зокрема з міжнародними фондами та організаціями.
+                      </p>
+                      <a href="javascript:void(0)" class="card-link">Детальніше?</a>
+                    </div>
+                  </div>
+                  <h6 class="mt-2 text-muted">Додатково</h6>
+                  <div class="card mb-4">
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">СЕРТИФІКАТИ ЗНО ДЛЯ ВСТУПУ'</li>
+                      <li class="list-group-item">ПЕРЕЛІК ОСВІТНІХ ПРОГРАМ</li>
+                      <li class="list-group-item">АКАДЕМІЧНА ДОБРОЧЕСТНІСТЬ</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <h6 class="mt-2 text-muted">28.05.2024</h6>
+                  <div class="card mb-4">
+                     <img class="card-img-top" src="https://mel.chnu.edu.ua/upload/b62a369c0ef35bb7ce3a99cb6f35eec8.jpg" alt="Card image cap" />
+                    <div class="card-body">
+                      <h5 class="card-title">16-17 травня відбулася ХVII Міжнародна наукова конференція “Актуальні проблеми романо-германської філології та прикладної лінгвістики”, присвячена 70-річчю факультету іноземних мов Чернівецького національного університету імені Юрія Федьковича</h5>
+                      <p class="card-text">
+                        Протягом двох днів усі зацікавлені мали змогу обговорити наріжні питання та новітні тенденції в романо-германському перекладознавстві, лексикології, текстології, когнітивістиці, методиці навчання іноземних мов та перекладу. На тлі війни в Україні та спричиненої нею складної безпекової ситуації організатори щиро раді були вітати очну присутність учасників зі США, Німеччини, Словенії, Словаччини.
+                      </p>
+                       <a href="javascript:void(0)" class="card-link">Детальніше?</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <h6 class="mt-2 text-muted">08.05.2024</h6>
+                  <div class="card">
+                    <img class="card-img-top" src="https://mel.chnu.edu.ua/upload/b7fe01048169c2a07b073e53a8283d8e.jpg" alt="Card image cap" />
+                    <div class="card-body">
+                      <h5 class="card-title">Сьогодні на факультеті іноземних мов відбувся надзвичайно важливий та актуальний захід "Україна— нація незламних"</h5>
+                      <p class="card-text">
+                        Цей захід став не лише майданчиком для обміну думками , але й доказом того, що спільні зусилля та єдність нашої нації може зробити вагомий внесок у перемогу. </p>
+                      <a href="javascript:void(0)" class="card-link">Детальніше?</a>
+                    </div>
+                    </div>
+                </div>
+              </div>
+
+              <!--/ News -->
+
+
+              <!-- Leadership -->
+
+              <h6 class="pb-1 mb-4 text-muted">Керівництво</h6>
+              <div class="row mb-5">
+                <div class="col-md-6 col-lg-4 mb-3">
+                  <div class="card">
+                    <img src="https://mel.chnu.edu.ua/upload/bac53df0f0224e8928f57ea9031e7b23.jpg" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title">Осовська Ірина Миколаївна</h5>
+                      <p class="card-text">
+                      декан факультету іноземних мов доктор філологічних наук, професор 19 корпус, 106 кабінет
+                      </p>
+                      <a href="javascript:void(0)" class="btn btn-primary">Контакти?</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3">
+                  <div class="card">
+                    <img src="https://mel.chnu.edu.ua/upload/623d2490a9606a402b7f7950e445f38e.png" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title">Колісниченко Тетяна Вікторівна</h5>
+                      <p class="card-text">
+                        заступник декана з навчально-методичної роботи кандидат філологічних наук, доцент
+                      </p>
+                      <a href="javascript:void(0)" class="btn btn-primary">Контакти?</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3">
+                  <div class="card">
+                    <img src="https://mel.chnu.edu.ua/upload/bd169d353a76038b780c5a21505ef4e8.png" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title">Косенко Анна Володимирівна</h5>
+                      <p class="card-text">
+                        заступник декана з науково-дослідної роботи кандидат філологічних наук, доцент
+                      </p>
+                      <a href="javascript:void(0)" class="btn btn-primary">Контакти?</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row mb-5">
+                <div class="col-md-6 col-lg-4 mb-3">
+                  <div class="card">
+                    <img src="https://mel.chnu.edu.ua/upload/d6ce4dc23c9093344f523effadb070b6.png" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title">Собков Юрій Вікторович</h5>
+                      <p class="card-text">
+                       заступник декана з навчально-виховної роботи кандидат філологічних наук, доцент
+                      </p>
+                      <a href="javascript:void(0)" class="btn btn-primary">Контакти?</a>
+                    </div>
+                  </div>
+                </div>
+               <div class="col-md-6 col-lg-4 mb-3">
+                  <div class="card">
+                    <img src="https://mel.chnu.edu.ua/upload/8270df0dd4734b2d9a7a5bda479cbdb1.png" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title">Oлексишина Лариса Георгіївна</h5>
+                      <p class="card-text">
+                       заступник декана з міжнародної співпраці кандидат філологічних наук, доцент
+                      </p>
+                      <a href="javascript:void(0)" class="btn btn-primary">Контакти?</a>
+                    </div>
+                  </div>
+                 </div>
+                </div>
+              </div>
+
+            <!-- / Leadership -->
+
+              <!-- departments -->
+              <h5 class="pb-1 mb-4">Кафедри</h5>
+              <div class="row mb-5">
+                <div class="col-md-6 col-xl-4">
+                  <div class="card mb-3">
+                    <img class="card-img-top" src="https://img.freepik.com/free-photo/waving-british-flag-in-the-sky_329181-19593.jpg" alt="Card image cap" />
+                    <div class="card-body">
+                      <h5 class="card-title">Кафедри англійської мови</h5>
+                      <p class="card-text">
+                       The Department of English at the Yuriy Fedkovych Chernivtsi National University is a recognized center for the study of the English language, literature, and methods of teaching foreign languages. For the academic year 2020-2021, there are 314
+full-time students, and 120 part-time students at the department. Classes for full-time and part-time students to obtain master’s and bachelor’s degrees, as well as for Ph.D. students, are conducted by 29 teaching staff members, including 28 full-time employees, 2 part-time employees, 2 full professors, 2 doctors of science, 15 candidates of science (candidates of sciences, associate professors – 11, candidates of sciences, assistant professors – 4) assistant professors – 7, Ph.D. students – 2.
+The department offers a wide selection of educational programs for bachelor’s and master’s degrees: educational level bachelor’s in “Philology”, educational level bachelor’s in “Secondary Education”, educational level master’s in “Philology”
+and educational level master’s specialty “Secondary Education”.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                  <div class="card mb-3">
+                    <div class="card-body">
+                      <h5 class="card-title">Кафедри германської філології та перекладу</h5>
+                      <p class="card-text">
+                        Кафедра германської філології та перекладу існує з часів заснування Чернівецького університету (1875) і є однією з провідних у царинах германського, загального та порівняльно-історичного мовознавства в Україні та за її межами. На кафедрі працювали: 1875-1892 – проф. Й. Штробль (німецький готичний епос, романтизм, синтаксис, словотвір), 1892-1918 – проф. О. Зінгерле фон Зуммерсберг (германістика, граматика готської мови, діалектологія, історія німецької мови), 1911-1916 – проф. В. Кош (новітня німецька література, драматургія, практична німецька мова), 1911-1918 – проф. Г. Райхель (порівняльна граматика, загальне мовознавство, діалектологія). У 1918-1940 рр. на кафедрі викладали проф. В. Мораріу (історія німецької літератури), проф. Франц Ланг (німецький народний епос).
+                      </p>
+                    </div>
+                    <img class="card-img-bottom" src="https://culturemeter.od.ua/wp-content/uploads/2018/10/%D1%84%D0%BB%D0%B0%D0%B3-%D0%B3%D0%B5%D1%80%D0%BC%D0%B0%D0%BD%D0%B8%D0%B8.jpg" alt="Card image cap" />
+                  </div>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                  <div class="card mb-3">
+                    <img class="card-img-top" src="https://img.freepik.com/premium-photo/national-flags-of-european-countries-on-the-european-square-in-kyiv-with-football_261932-36.jpg?size=626&ext=jpg" alt="Card image cap" />
+                    <div class="card-body">
+                      <h5 class="card-title">Кафедра іноземних мов для гуманітарних факультетів</h5>
+                      <p class="card-text">
+                        Кафедра іноземних мов для гуманітарних факультетів  забезпечує викладання іноземних мов (англійської та німецької) на першому (бакалаврському), другому (магістерському) та третьому (освітньо-науковому) рівнях вищої освіти на гуманітарних факультетах Чернівецького національного університету імені Юрія Федьковича: юридичному, економічному, філологічному, факультеті педагогіки, психології та соціальної роботи, факультеті  фізичної культури та здоров'я людини.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row mb-5">
+                <div class="col-md">
+                  <div class="card mb-3">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img class="card-img card-img-left" src="https://world-study.ua/wp-content/uploads/2019/03/Universitety-Germanii-2.jpg" width="350" height="250" alt="Card image" />
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">Кафедра іноземних мов для природничих факультетів</h5>
+                          <p class="card-text">
+                           The current level of specialist training involves the creation of conditions for the development of language and speech competences, and achieving by students the level of knowledge required for a specialist with a Degree. The overall objective of foreign language training, which is currently provided by our Department of Foreign Languages ​​for Natural Sciences for all specialties, is a practical language proficiency. A student should obtain a level of language knowledge that will facilitate his/her integration into the language surrounding and competitiveness in the labour market.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md">
+                  <div class="card mb-3">
+                    <div class="row g-0">
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">Кафедра комунікативної лінгвістики та перекладу</h5>
+                          <p class="card-text">
+                           Кафедра готує фахівців у галузі мовної комунікації, перекладачів, викладачів основної мови та перекладу. Кафедра забезпечує викладання теоретичних курсів вступу до перекладознавства, історії перекладу, порівняльної граматики, порівняльної лексикології, порівняльної стилістики, основ мовної комунікації, особливостей перекладу художнього тексту та спеціальних текстів.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <img class="card-img-right" src="https://static.euronews.com/articles/384046/1200x675_384046.jpg" width="320" height="250" alt="Card image" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- / departments -->
+
+              <!-- list of method members -->
+              <h5 class="pb-1 mb-4">Список членів методради</h5>
+              <div class="row">
+                <div class="col-md-6 col-xl-4">
+                  <div class="card bg-primary text-white mb-3">
+                    <div class="card-body">
+                      <p class="card-text">Голова</p>
+                      <h5 class="card-title text-white">Беженар Ірина Володимирівна</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                  <div class="card bg-secondary text-white mb-3">
+                    <div class="card-body">
+                      <p class="card-text">Секретар</p>
+                      <h5 class="card-title text-white">Руснак Діана Андріївна</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                  <div class="card bg-success text-white mb-3">
+                    <div class="card-body">
+                      <p class="card-text">Заступник</p>
+                      <h5 class="card-title text-white">Лесінська Оксана Михайлівна</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                  <div class="card bg-danger text-white mb-3">
+                    <div class="card-body">
+                      <h5 class="card-title text-white">Колісниченко Тетяна Вікторівна</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                  <div class="card bg-warning text-white mb-3">
+                    <div class="card-body">
+                      <h5 class="card-title text-white">Павлович Тетяна Іванівна</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                  <div class="card bg-info text-white mb-3">
+                    <div class="card-body">
+                      <h5 class="card-title text-white">Кійко Юрій Євгенович</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Outline -->
+              <div class="row">
+               <div class="col-md-6 col-xl-4">
+                  <div class="card bg-primary text-white mb-3">
+                    <div class="card-body">
+                      <h5 class="card-title text-white"> Кудрявцева Олена Діонізіївна</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                  <div class="card bg-danger text-white mb-3">
+                    <div class="card-body">
+                      <h5 class="card-title text-white">Олексишина Лариса Георгіївна</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                  <div class="card bg-secondary text-white mb-3">
+                    <div class="card-body">
+                      <h5 class="card-title text-white">Бортник Світлана Борисівна</h5>
+                    </div>
+                  </div>
+                </div>
+                 <div class="col-md-6 col-xl-4">
+                  <div class="card bg-danger text-white mb-3">
+                    <div class="card-body">
+                      <h5 class="card-title text-white">Мудра Олена Василівна</h5>
+                    </div>
+                  </div>
+                </div>
+               <div class="col-md-6 col-xl-4">
+                  <div class="card bg-warning text-white mb-3">
+                    <div class="card-body">
+                      <h5 class="card-title text-white">Паров'як Іван Іванович</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                  <div class="card bg-info text-white mb-3">
+                    <div class="card-body">
+                      <h5 class="card-title text-white">Мусурівська Олеся Валеріївна</h5>
+                    </div>
+                  </div>
+                </div>
+                 <div class="col-md-6 col-xl-4">
+                  <div class="card bg-secondary text-white mb-3">
+                    <div class="card-body">
+                      <h5 class="card-title text-white">Грижак Людмила Михайлівна</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                  <div class="card bg-success text-white mb-3">
+                    <div class="card-body">
+                      <h5 class="card-title text-white">Коропатніцька Тетяна Петрівна</h5>
+                    </div>
+                  </div>
+                </div>
+                 <div class="col-md-6 col-xl-4">
+                  <div class="card bg-success text-white mb-3">
+                    <div class="card-body">
+                      <h5 class="card-title text-white">Черська Жанна Борисівна</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                  <div class="card bg-secondary text-white mb-3">
+                    <div class="card-body">
+                      <h5 class="card-title text-white">Лабінська Богдана Ігорівна</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                  <div class="card bg-success text-white mb-3">
+                    <div class="card-body">
+                      <h5 class="card-title text-white">Микитюк Ірина Михайлівна</h5>
+                    </div>
+                  </div>
+                </div>
+                 <div class="col-md-6 col-xl-4">
+                  <div class="card bg-danger text-white mb-3">
+                    <div class="card-body">
+                      <h5 class="card-title text-white">Косенко Анна Володимирівна</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                  <div class="card bg-primary text-white mb-3">
+                    <div class="card-body">
+                      <h5 class="card-title text-white">Попович Михайло Михайлович</h5>
+                    </div>
+                  </div>
+                </div>
+                 <div class="col-md-6 col-xl-4">
+                  <div class="card bg-info text-white mb-3">
+                    <div class="card-body">
+                      <h5 class="card-title text-white">Cмірнова Марина Романівна</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- / list of method members -->
+
+              <!-- educational programs -->
+              <h5 class="pb-1 my-5">Освітні програми</h5>
+              <div class="card-group mb-5">
+                <div class="card">
+                  <img class="card-img-top" src="https://www.chnu.edu.ua/media/1vzf3y5p/symvolika-3.png?format=webp&quality=80&v=1d93fa57f52d930" alt="Card image cap" />
+                  <div class="card-body">
+                    <h5 class="card-title">ОП БАКАЛАВР</h5>
+                    <p class="card-text d-flex justify-content-start flex-column">
+                      Середня Освіта Англійська мова і література та друга іноземна мова
+                    </p>
+                    <p class="card-text d-flex justify-content-start flex-column">
+                      Середня Освіта Німецька мова і література та друга іноземна мова
+                    </p>
+                    <p class="card-text d-flex justify-content-start flex-column">
+                      Середня Освіта Французька мова і література та друга іноземна мова
+                    </p>
+                    <p class="card-text d-flex justify-content-start flex-column">
+                      Філологія Англійсько-український переклад та переклад з другої іноземної мови 2023
+                    </p>
+                    <a href="javascript:void(0)" class="btn btn-primary">Більше...</a>
+                  </div>
+                </div>
+                <div class="card">
+                  <img class="card-img-top" src="https://www.chnu.edu.ua/media/1vzf3y5p/symvolika-3.png?format=webp&quality=80&v=1d93fa57f52d930" alt="Card image cap" />
+                  <div class="card-body">
+                    <h5 class="card-title">ОП МАГІСТР</h5>
+                    <p class="card-text">
+                      Середня Освіта Англійська мова і література та друга іноземна мова
+                    </p>
+                    <p class="card-text">
+                      Філологія Англійська мова і література та друга іноземна мова
+                    </p>
+                    <p class="card-text">
+                      Філологія Англійсько-український переклад та переклад з другої іноземної мови
+                    </p>
+                    <p class="card-text">
+                      Філологія Німецька мова і література та англійська мова
+                    </p>
+                    <a href="javascript:void(0)" class="btn btn-primary">Більше...</a>
+                  </div>
+                </div>
+                <div class="card">
+                  <img class="card-img-top" src="https://www.chnu.edu.ua/media/1vzf3y5p/symvolika-3.png?format=webp&quality=80&v=1d93fa57f52d930" alt="Card image cap" />
+                  <div class="card-body">
+                    <h5 class="card-title">СИЛАБУСИ</h5>
+                    <p class="card-text">
+                     Іншомовна комунікація у професійній діяльності (англійська)
+                    </p>
+                    <p class="card-text">
+                    Іншомовна комунікація у професійній діяльності (німецька)
+                    </p>
+                    <p class="card-text">
+                     Практика особистої та професійної комунікації іноземною мовою
+                    </p>
+                    <a href="javascript:void(0)" class="btn btn-primary">Більше...</a>
+                  </div>
+                </div>
+              </div>
+             <!-- / educational programs -->
+
+              <!-- SYLLABUS OF EDUCATIONAL DISCIPLINES FOR GRADUATE STUDENTS -->
+              <h6 class="pb-1 mb-4 text-muted">СИЛАБУСИ НАВЧАЛЬНИХ ДИСЦИПЛІН ДЛЯ АСПІРАНТІВ</h6>
+              <div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
+                <div class="col">
+                  <div class="card h-100">
+                    <img class="card-img-top" src="https://www.chnu.edu.ua/media/mytl0lvp/art_2314.jpg?format=webp&quality=80&v=1d96c0b26183120" alt="Card image cap" />
+                    <div class="card-body">
+                      <h5 class="card-title">Міжкультурна комунікація та лінгвосинергетика</h5>
+                      <p class="card-text d-flex justify-content-start flex-column">
+                        Освітньо-наукова програма «Германські мови»
+                      </p>
+                      <p class="card-text d-flex justify-content-start flex-column">
+                        Спеціальність 035 Філологія
+                      </p>
+                      <p class="card-text d-flex justify-content-start flex-column">
+                        Галузь знань 03 Гуманітарні науки
+                      </p>
+                      <p class="card-text d-flex justify-content-start flex-column">
+                        Рівень вищої освіти третій (доктор філософії), факультет іноземних мов
+                      </p>
+                      <p class="card-text d-flex justify-content-start flex-column">
+                        Мова навчання українська
+                      </p>
+                      <p class="card-text d-flex justify-content-start flex-column">
+                        Розробники: Бялик В.Д., завідувач кафедри комунікативної лінгвістики та перекладу, доктор філологічних наук, професор
+                      </p>
+                      <p class="card-text d-flex justify-content-start flex-column">
+                        Профайл викладача: http://translationdept.chnu.edu.ua/?page_id=6
+                      </p>
+                      <p class="card-text d-flex justify-content-start flex-column">
+                        https://scholar.google.com.ua/citations?hl=uk&user=JvYENOEAAAAJ&view_op=list_works&authuser=1
+                      </p>
+                      <p class="card-text d-flex justify-content-start flex-column">
+                        Контактний тел. +380956763667
+                      </p>
+                      <p class="card-text d-flex justify-content-start flex-column">
+                        E-mail: v.bialyk@chnu.edu.ua
+                      </p>
+                      <p class="card-text d-flex justify-content-start flex-column">
+                        Сторінка курсу в Moodle
+                      </p>
+                      <p class="card-text d-flex justify-content-start flex-column">
+                        Консультації Онлайн-консультації: понеділок та четвер з 14.00 до 15.00
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img class="card-img-top" src="https://bukinfo.com.ua/news-gallery/649eb8ca76c20.jpg" alt="Card image cap" />
+                    <div class="card-body">
+                      <h5 class="card-title">Сучасні теорії граматики</h5>
+                      <p class="card-text d-flex justify-content-start flex-column">
+                        напрям підготовки Доктор філософії (PhD)
+                      </p>
+                      <p class="card-text d-flex justify-content-start flex-column">
+                        Галузь знань 03 – Гуманітарні науки
+                      </p>
+                      <p class="card-text d-flex justify-content-start flex-column">
+                        Спеціальність 035 Філологія
+                      </p>
+                      <p class="card-text d-flex justify-content-start flex-column">
+                        Метою викладання дисципліни „Сучасні теорії граматики”  ознайомлення здобувачів зі станом наукового знання у цій галузі й подальше формування їх навичок наукового мислення та вмінь аналізу емпіричного матеріалу.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                  <div class="card h-70">
+                    <img class="card-img-top" src="https://cdn5.pokupon.ua/uploaded/merchant_page_images/217762/data/main720x340/2.jpg" alt="Card image cap" />
+                    <div class="card-body">
+                      <h5 class="card-title">Когнітивна лінгвістика і лінгвоконцептологія</h5>
+                      <p class="card-text d-flex justify-content-start flex-column">
+                        Освітньо-професійна програма - Германські мови»
+                      </p>
+                      <p class="card-text d-flex justify-content-start flex-column">
+                        Спеціальність - 035 Філологія
+                      </p>
+                      <p class="card-text d-flex justify-content-start flex-column">
+                        Галузь знань - 03 Гуманітарні науки
+                      </p>
+                      <p class="card-text d-flex justify-content-start flex-column">
+                        Рівень вищої освіти - третій (доктор філософії)
+                      </p>
+                      <p class="card-text d-flex justify-content-start flex-column">
+                       Мова навчання - англійська
+                      </p>
+                      <p class="card-text d-flex justify-content-start flex-column">
+                        Розробники: д.ф.н., проф.Єсипенко Н.Г
+                      </p>
+                      <p class="card-text d-flex justify-content-start flex-column">
+                       Профайл викладача (-ів):
+                       http://english.chnu.edu.ua/?page_id=468&lang=en
+                      </p>
+                      <p class="card-text d-flex justify-content-start flex-column">
+                        E-mail: n.yesypenko@chnu.edu.ua
+                      </p>
+                      <p class="card-text d-flex justify-content-start flex-column">
+                        Консультації: Онлайн-консультації: за попередньою домовленістю
+                      </p>
+                    </div>
+                  </div>
+                 <div class="col">
+                  <div class="card h-70">
+                    <img class="card-img-top" src="https://vidviday.ua/blog/wp-content/uploads/2016/01/chernovtsy-tam-ua1.jpg" alt="Card image cap" />
+                    <div class="card-body">
+                      <h5 class="card-title">Історія германських мов</h5>
+                      <p class="card-text d-flex justify-content-start flex-column">
+                        Освітньо-наукова програма «Германські мови»
+                      </p>
+                      <p class="card-text d-flex justify-content-start flex-column">
+                       Спеціальність 035 Філологія
+                      </p>
+                      <p class="card-text d-flex justify-content-start flex-column">
+                       Галузь знань 03 Гуманітарні науки
+                      </p>
+                      <p class="card-text d-flex justify-content-start flex-column">
+                       Рівень вищої освіти третій (доктор філософії), факультет іноземних мов
+                      </p>
+                      <p class="card-text d-flex justify-content-start flex-column">
+                        Мова навчання: українська
+                      </p>
+                      <p class="card-text d-flex justify-content-start flex-column">
+                        Розробники: Кійко С.В., завідувач кафедри германського, загального і порівняльного мовознавства факультету іноземних мов, доктор філологічних наук, професор
+                      </p>
+                      <p class="card-text d-flex justify-content-start flex-column">
+                        Профайл викладача http://deutsch.chnu.edu.ua/?page_id=8
+                      </p>
+                      <p class="card-text d-flex justify-content-start flex-column">
+                       Контактний тел. (066) 72 88 077
+                      </p>
+                      <p class="card-text d-flex justify-content-start flex-column">
+                        E-mail: s.kiyko@chnu.edu.ua
+                      </p>
+                      <p class="card-text d-flex justify-content-start flex-column">
+                       Сторінка курсу в Moodle https://moodle.chnu.edu.ua/course/view.php?id=253
+                      </p>
+                      <p class="card-text d-flex justify-content-start flex-column">
+                       Консультації Очні консультації: вівторок, 14.00-15.00 Онлайн-консультації: за попередньою домовленістю
+                      </p>
+                    </div>
+                  </div>
+                 </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img class="card-img-top" src="https://media.acc.cv.ua/news/article/2017/05/29/9843/18664215_1899224777016634_5099021643369049937_n.w575.jpg" alt="Card image cap" />
+                    <div class="card-body">
+                      <h5 class="card-title">Загальні теорії мови та історія лінгвістичних вчень</h5>
+                      <p class="card-text d-flex justify-content-start flex-column">
+                        Освітньо-наукова програма «Германські мови»
+                      </p>
+                      <p class="card-text d-flex justify-content-start flex-column">
+                        Спеціальність 035 Філологія
+                      </p>
+                      <p class="card-text d-flex justify-content-start flex-column">
+                        Галузь знань 03 Гуманітарні науки
+                      </p>
+                      <p class="card-text d-flex justify-content-start flex-column">
+                        Рівень вищої освіти третій (доктор філософії), факультет іноземних мов
+                      </p>
+                       <p class="card-text d-flex justify-content-start flex-column">
+                        Мова навчання українська
+                      </p>
+                      <p class="card-text d-flex justify-content-start flex-column">
+                        Розробники: Кушнерик В.І, доктор філологічних наук, професор
+                      </p>
+                      <p class="card-text d-flex justify-content-start flex-column">
+                        Профайл викладача
+                        http://deutsch.chnu.edu.ua/?page_id=8
+                        https://scholar.google.com.ua/citations?user=RtpVVsIAAAAJ&hl=ru
+                      </p>
+                      <p class="card-text d-flex justify-content-start flex-column">
+                        Контактний тел. +380952222990
+                      </p>
+                       <p class="card-text d-flex justify-content-start flex-column">
+                         E-mail: w.kushneryk@chnu.edu.ua
+                      </p>
+                       <p class="card-text d-flex justify-content-start flex-column">
+                         Консультації Онлайн-консультації: вівторок-п'ятниця з 15.00 до 16.00
+                         Очні консультації: вівторок-п'ятниця з 15.00 до 16.00
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-70">
+                    <img class="card-img-top" src="https://promin.cv.ua/uploads/posts/2021-09/1630594922_c75a1951-10b0-4ce5-b07e-aa6ac178abae.jpeg" alt="Card image cap" />
+                    <div class="card-body">
+                      <h5 class="card-title">Квантитативні методи у лексичній семантиці</h5>
+                      <p class="card-text d-flex justify-content-start flex-column">
+                        Освітньо-наукова програма «Германські мови»
+                      </p>
+                      <p class="card-text d-flex justify-content-start flex-column">
+                        Спеціальність 035 Філологія
+                      </p>
+                      <p class="card-text d-flex justify-content-start flex-column">
+                        Галузь знань 03 Гуманітарні науки
+                      </p>
+                      <p class="card-text d-flex justify-content-start flex-column">
+                        Рівень вищої освіти третій (доктор філософії), факультет іноземних мов
+                      </p>
+                       <p class="card-text d-flex justify-content-start flex-column">
+                        Мова навчання українська
+                      </p>
+                      <p class="card-text d-flex justify-content-start flex-column">
+                        Розробники: Кушнерик В.І, доктор філологічних наук, професор
+                      </p>
+                      <p class="card-text d-flex justify-content-start flex-column">
+                        Профайл викладача
+                        http://deutsch.chnu.edu.ua/?page_id=8
+                        https://scholar.google.com.ua/citations?user=RtpVVsIAAAAJ&hl=ru
+                      </p>
+                      <p class="card-text d-flex justify-content-start flex-column">
+                        Контактний тел. +380952222990
+                      </p>
+                       <p class="card-text d-flex justify-content-start flex-column">
+                         E-mail: w.kushneryk@chnu.edu.ua
+                      </p>
+                       <p class="card-text d-flex justify-content-start flex-column">
+                         Консультації Онлайн-консультації: вівторок-п'ятниця з 15.00 до 16.00
+                         Очні консультації: вівторок-п'ятниця з 15.00 до 16.00
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- / SYLLABUS OF EDUCATIONAL DISCIPLINES FOR GRADUATE STUDENTS -->
+
+              <!-- international programs -->
+              <h6 class="pb-1 mb-4 text-muted">Міжнародні програми</h6>
+              <div class="row" data-masonry='{"percentPosition": true }'>
+                <div class="col-sm-6 col-lg-4 mb-4">
+                  <div class="card">
+                    <img class="card-img-top" src="https://lntu.edu.ua/sites/default/files/articles/%D0%A8%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD%20_2.png" width="250" alt="Card image cap" />
+                    <div class="card-body">
+                      <h5 class="card-title">Закордонні стажування викладачів факультету</h5>
+                      <p class="card-text">
+                       - Як і в минулому році, наші викладачі активно стажуються закордоном. Викладач Сафтюк В. В. проходила стажування в рамках Еразмус + 20-24 травня у Педагогічному університеті Карінтії (Клагенфурт, Австрія).
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 mb-4">
+                  <div class="card p-3">
+                    <figure class="p-3 mb-0">
+                      <blockquote class="blockquote">
+                        <h5 class="card-title">Участь у міжнародних проєктах</h5>
+                      </blockquote>
+                      <figcaption class="card-text">
+                       - Доц. Г. Драненко бере активну участь у низці наукових проєктів, зокрема проєкті Вищої нормальної школи в Ліоні «(D)’Après Flaubert» (2020-2021 pp., 14 країн), проєктах Європейської Асоціації науковців імені Франсуа Моріака «Errance et sens de l’être et de la lettre dans la littérature» (2019-2021 pp., 11 країн) та «Frontières et ponts littéraires» (2020-2021 pp., 8 країн), проєкті Версальського університету та Університету Лілль «Zola derrière le rideau de fer» (2019-2021 рр., 9 країн), проєкті Університету Сен-Дені Реюньон та Лотаринзького університету «Lire des vies. L’approche biographique en sciences humaines et sociales» (2020-2021 pp.), проєкті кафедри романської філології та перекладу Чернівецького національного університету імені Юрія Федьковича «Accueillir l’Autre dans sa langue. La traduction comme dispositif de mediation» (2020-2021 pp., 9 країн), проєкті Руанського університету «Flaubert sans frontières» (2014-2021 pp., 27 країн), за результатами яких виголошено доповіді на міжнародних конференціях та опубліковані матеріали у колективних монографіях
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 mb-4">
+                  <div class="card">
+                    <img class="card-img-top" src="https://www.kname.edu.ua/images/News/2021/02_Feb/1002/logo2021.png" alt="Card image cap" />
+                    <div class="card-body">
+                      <h5 class="card-title">Читання лекцій, ведення вебінарів за кордоном</h5>
+                      <p class="card-text">
+                        - Викладачі факультету активізують власну лекторську діяльність за кордоном. Так, доц. Г. Кутасевич виступила з доповіддю «Libérer la parole en classe de langue : pratiques et difficultés» на пленарному засіданні конгресу «Enseignement des langues: monter, piloter et évaluer un projet interdisciplinaire”, організованого Посольством Франції в Португалії, Університетом Лісабона та Асоціацією викладачів французької мови в Португалії (січень, Лісабон, Португалія), та провела там воркшоп «Favoriser la compréhension et l’interaction orales». До лекторського здобутку доц...
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 mb-4">
+                  <div class="card text-center p-3">
+                    <figure class="mb-0">
+                      <blockquote class="blockquote">
+                        <h5 class="card-title">Участь студентів у закордонних програмах та стажуваннях, перемоги в міжнародних конкурсах</h5>
+                      </blockquote>
+                      <figcaption class="card-text">
+                       - Студенти факультету не так активно, як раніше, проте теж натхненно взяли участь у закордонних програмах та стажуваннях, зокрема: - у рамках програми академічної мобільності Erasmus+: • в Єнському університеті Фрідріха Шиллера (Німеччина) з 3 лютого по 30 червня 2020 навчались студенти Н. Довбуш, М. Боровська і О. Лучак; • у Педагогічному університеті Каринтії (Австрія) з 28 вересня по 31 січня 2020 року проходить навчання студентка 3 курсу М. Держко; • в Університеті Валенсії (Іспанія) з 1 вересня по 30 січня навчається студентка 4 курсу О. Унгурян; - у рамках Партнерської угоди з університетом Аугсбурга з листопада 2020 по лютий 2021 в Університеті Аугсбурга навчалися студентки 4 курсу Ю. Матюшок та Х. Гуцол...
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 mb-4">
+                  <div class="card text-center">
+                    <div class="card-body">
+                      <h5 class="card-title">Закордонні стажування викладачів факультету, участь у міжнародних проєктах, семінарах, вебінарах</h5>
+                      <p class="card-text">- Наші викладачі активно, хоча й дистанційно, стажуються за кордоном. • Так, доц. Г. Кутасевич пройшла стажування на габілітацію тьютора PROFLE+, організоване Міжнародним центром педагогічних дисциплін (CIEP) та Французьким міжнародним центром дистанційного навчання (CNED), та у березні 2020 року успішно склала іспит (Київ – Париж); • проф. Б. Лабінська з 11 по 5 липня 2020 року пройшла онлайн-курс підвищення кваліфікації „Тьюторство в онлайн-навчанні“ при Гете-Інституті Мюнхен (Німеччина). • Л. Томнюк, Н. Виспінська, О. Данилович, Т. Колісниченко та О. Шумейко взяли участь у міжнародному онлайн-стажуванні науково-педагогічних працівників у Вищій школі бізнесу – Національному університеті Луїса (Новий Сонч, Польща) з 21 вересня по 30 жовтня 2020 року; • О. Шумейко – у стажуванні на базі Університету Collеgium Civitas (Варшава, Польща) з 23 червня по 15 липня 2020 року; • М. Велущак – у цьому ж закладі з 8 листопада по 18 грудня 2020 року...</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 mb-4">
+                  <div class="card">
+                    <img class="card-img-top" src="https://fmab.khadi.kharkov.ua/fileadmin/F-FUB/%D0%95%D0%BA%D0%BE%D0%BD%D0%BE%D0%BC%D1%96%D0%BA%D0%B8_%D1%96_%D0%BF%D1%96%D0%B4%D0%BF%D1%80%D0%B8%D1%94%D0%BC%D0%BD%D0%B8%D1%86%D1%82%D0%B2%D0%B0/ek_predpriyatiy/Mizhnarodne_stazhuvannya/%D0%9A%D0%B8%D1%80%D1%87%D0%B0%D1%82%D0%B0_2024.jpg" alt="Card image cap" />
+                  </div>
+                </div>
+              </div>
+              <!-- / international programs -->
+
+              <!--/ Card layout -->
+            </div>
+            <!-- / Content -->
+
+            <!-- Footer -->
+            <footer class="content-footer footer bg-footer-theme">
+              <div class="container-xxl d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column">
+                <div class="mb-2 mb-md-0">
+                  ©
+                  <script>
+                    document.write(new Date().getFullYear());
+                  </script>
+                  , made with
+                  <a href="#" target="_blank" class="footer-link fw-bolder">ARTEM COMPANY</a>
+                </div>
+                <div>
+                  <a href="#" target="_blank" class="footer-link me-4">Про нас</a>
+                  <a href="#" target="_blank" class="footer-link me-4">Наші партнери</a>
+
+                  <a
+                    href="#"
+                    target="_blank"
+                    class="footer-link me-4"
+                    >Контакти</a>
+
+                  <a
+                    href="#"
+                    target="_blank"
+                    class="footer-link me-4"
+                    >Підтримка</a>
+                </div>
+              </div>
+            </footer>
+            <!-- / Footer -->
+
+            <div class="content-backdrop fade"></div>
+          </div>
+          <!-- Content wrapper -->
+        </div>
+        <!-- / Layout page -->
+      </div>
+
+      <!-- Overlay -->
+      <div class="layout-overlay layout-menu-toggle"></div>
+    </div>
+    <!-- / Layout wrapper -->
+
+    <div class="buy-now">
+      <a
+        href="https://themeselection.com/products/sneat-bootstrap-html-admin-template/"
+        target="_blank"
+        class="btn btn-danger btn-buy-now"
+        >Задати питання?</a>
+      >
+    </div>
+
+    <!-- Core JS -->
+    <!-- build:js assets/vendor/js/core.js -->
+    <script th:src="@{/static/assets/vendor/libs/jquery/jquery.js}"></script>
+    <script th:src="@{/static/assets/vendor/libs/popper/popper.js}"></script>
+    <script th:src="@{/static/assets/vendor/js/bootstrap.js}"></script>
+    <script th:src="@{/static/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js}"></script>
+
+    <script th:src="@{/static/assets/vendor/js/menu.js}"></script>
+    <!-- endbuild -->
+
+    <!-- Vendors JS -->
+
+    <!-- Main JS -->
+    <script th:src="@{/static/assets/js/main.js}"></script>
+
+    <!-- Page JS -->
+
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+  </body>
+</html>
